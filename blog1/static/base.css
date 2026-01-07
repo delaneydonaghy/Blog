@@ -1,0 +1,180 @@
+body{
+    margin: 0px;
+
+}
+header{
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100px;
+}
+
+.homenav h1 a {
+    
+    margin: 10px;
+    color: green;
+    text-decoration: none;
+    float: left;
+    font-size:50px;
+    padding-left: 10px;
+    
+}
+.new a, .topics a{
+    margin: 10px;
+    text-decoration: none;
+    float: right;
+    text-align:center;
+    padding: 14px 16px;
+    color: green;
+    display: block;
+    font-size: 18px;
+}
+.new a:hover, .topics a:hover{
+    background-color: rgb(243, 243, 243);
+}
+header{
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bodycontent{
+    float:clear;
+}
+
+footer {
+    background-color:rgb(185, 226, 185);
+    display: block;
+    position:relative;
+    margin: 0;
+    padding: 5;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    clear:both;
+    font-size: 12px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.post-entry{
+    border: 2px grey solid;
+    width: 70%;
+    height: 50%;
+    padding: 20px;
+    margin: auto;
+    
+}
+.post-entry h2{
+    font-size: 30px;
+}
+
+.post-entry h2 a {
+    text-decoration: none;
+    color:rgb(89, 131, 89);
+
+}
+.post-entry h2 a:hover {
+    color:rgb(149, 168, 149);
+
+}
+.edit a{
+    text-decoration: none;
+}
+.delete a{
+    text-decoration: none;
+}
+
+figure{
+    border: 3px solid black;
+}
+figure img{
+    width:300px;
+    height:260px;
+}
+
+.login {
+    border: 3px solid rgb(89, 131, 89);
+    color: white;
+    margin: auto;
+    padding: 10px;
+    width: 30%;
+    background-color:rgb(89, 131, 89);
+    
+    
+}
+.signup{
+    border: 3px solid rgb(89, 131, 89);
+    color: white;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    background-color:rgb(89, 131, 89);
+}
+
+.login button, .signup button{
+    border: white ;
+    width: 90px;
+    height: 35px;
+    margin: auto;
+    background-color: white;
+    color:rgb(89, 131, 89);
+
+    
+}
+.edit a, .delete a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(89, 131, 89);
+    padding: 16px 10px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+.edit a:hover, .delete a:hover{
+    background-color:rgb(149, 168, 149);
+}
+.topiclist{
+    padding: 20px;
+    margin:auto;
+    width: 50%;
+    border: grey solid 3px;
+    background: white;
+
+}
+
+.topicnav a:hover{
+    color: lightslategray;
+}
+.newpost{
+    padding: 20px;
+    margin:auto;
+    width: 50%;
+    border: grey solid 3px;
+    background-color: white;
+    color:rgb(89, 131, 89);
+}
+
+.edits{
+    padding: 20px;
+    margin:auto;
+    width: 50%;
+    border: grey solid 3px;
+    background-color: white;
+    color:rgb(89, 131, 89);
+}
+
+.deletion{
+    padding: 20px;
+    margin:auto;
+    width: 50%;
+    border: grey solid 3px;
+    background-color: white;
+    color:rgb(89, 131, 89);
+}

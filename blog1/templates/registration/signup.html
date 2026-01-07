@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{%load static %}
+
+<main style="position: relative; width: 100%">
+<img src="{% static 'backgroundimage2.jpg' %}" alt="background image tulips" width="100%" height="100%" style="opacity:0.5;">
+<div class="signup" style="position: absolute; top:50%; left:50%; transform:translate(-50%, -50%);">
+<h2>Sign Up</h2>
+<form method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign Up</button>
+</form >
+</div>
+</main>
+{% endblock content %}

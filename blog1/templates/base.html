@@ -1,0 +1,61 @@
+{% load static %}
+<html>
+
+<head>
+    <title>Plant Life</title>
+    <link href="{% static 'base.css' %}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <main>
+    
+    <header>
+    <div class="homenav">
+        <h1><a href = "{% url 'home' %}">Plant Life</a></h1>
+    </div>
+
+    <div class="new">
+        {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}">+ New Post</a>
+        {% endif %}
+    </div>
+
+    <div class="topics">
+        <a href="{% url 'topic' %}">Topics</a>
+        {% if user.is_authenticated %}
+        
+        <a href="{% url 'logout' %}">Log Out</a>
+        {% else %}
+        
+        <a href="{% url 'login' %}">Log In</a> 
+        <a href="{% url 'signup' %}">Sign Up</a>
+    {% endif %}
+    </div>
+    
+    </div>
+    </header>
+    
+    <br>
+
+    {% if user.is_authenticated %}
+    <p style="font-size:25px; text-align:center;"> Welcome {{user.username}}</p>
+    
+    {% else %}
+    <p style="font-size:25px; text-align:center;">You are not logged in.</p>
+    
+    {% endif %}
+    
+    
+
+    <div class="bodycontent">
+    
+    
+    
+        {% block content %} {% endblock content %}
+    </div>
+    </main>
+
+    <footer> delaneydonaghy 2024</footer>
+</body>
+
+</html>
